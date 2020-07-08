@@ -45,6 +45,7 @@ public class Solution40 {
         return;
       }
       /**
+       * 这种方法去重的前提是排序
        * 必须要有start>index的前置条件，否则会有数组越界异常，因为第一次的时候index=0
        * 而且每次开始start都是等于index，下一次的时候数组中start=start-1就代表start-1已经被使用过
        * index表示每次进入递归函数第一个元素，start每次回归的时候index都要增加
@@ -68,7 +69,7 @@ public class Solution40 {
 
     return res;
   }
-//=============方法二，关键是去重，排序去重
+//=============方法二，关键是去重，使用排序去重
   public static List<List<Integer>> combinationSum22(int[] candidates, int target) {
     Arrays.sort(candidates);
     List<List<Integer>> res = new ArrayList<>();
