@@ -7,10 +7,12 @@ import java.util.Arrays;
  */
 public class Test {
   public static void main(String[] args) {
-    int[] arr = {12,34,2,545,64,5,23,344,22,1234};
+    /*int[] arr = {12,34,2,545,64,5,23,344,22,1234};
     quickSort(arr,0,arr.length - 1);
     Arrays.stream(arr).forEach(x -> System.out.print(x+","));
-    System.out.println();
+    System.out.println();*/
+
+
   }
   public static void quickSort(int[] arr,int low,int high){
     if(low < high){
@@ -39,4 +41,6 @@ public class Test {
     System.out.println();
     return low;
   }
+
+
 }

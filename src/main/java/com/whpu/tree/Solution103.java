@@ -1,6 +1,4 @@
-package com.whpu.queue;
-
-import com.whpu.tree.TreeNode;
+package com.whpu.tree;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
