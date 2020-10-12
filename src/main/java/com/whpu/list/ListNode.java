@@ -12,4 +12,7 @@ public class ListNode {
     this.val = val;
   }
 
+  public ListNode() {
+
+  }
 }

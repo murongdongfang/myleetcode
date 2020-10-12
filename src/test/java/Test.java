@@ -3,14 +3,15 @@ import java.util.Arrays;
 /**
  *@author xxh
  *@date 2020/5/23
- *@discription: leetcode
+ *@discription:
+ * 快速排序
  */
 public class Test {
   public static void main(String[] args) {
-    /*int[] arr = {12,34,2,545,64,5,23,344,22,1234};
+    int[] arr = {12,34,2,545,64,5,23,344,22,1234};
     quickSort(arr,0,arr.length - 1);
     Arrays.stream(arr).forEach(x -> System.out.print(x+","));
-    System.out.println();*/
+    System.out.println();
 
 
   }
@@ -30,17 +31,15 @@ public class Test {
       }
         arr[low] = arr[high];
 
-      while(low<high && arr[low] <= pivot){
+      while(low<high && arr[low] < pivot){
         low++;
       }
         arr[high] = arr[low];
 
     }
     arr[low] = pivot;
-    Arrays.stream(arr).forEach(x -> System.out.print(x+","));
-    System.out.println();
+   /* Arrays.stream(arr).forEach(x -> System.out.print(x+","));
+    System.out.println();*/
     return low;
   }
-
-
 }

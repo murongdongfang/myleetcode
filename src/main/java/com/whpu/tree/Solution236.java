@@ -6,15 +6,16 @@ package com.whpu.tree;
  *@discription:
  * 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。
  *
- * 百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”
+ * 百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，
+ * 满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”
  *
- * 例如，给定如下二叉树:  root = [3,5,1,6,2,0,8,null,null,7,4]
+ * 例如，给定如下二叉树: root =[3,5,1,6,2,0,8,null,null,7,4]
  * 示例 1:
  *
  * 输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
  * 输出: 3
  * 解释: 节点 5 和节点 1 的最近公共祖先是节点 3。
- * 示例 2:
+ * 示例2:
  *
  * 输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
  * 输出: 5
@@ -25,10 +26,12 @@ package com.whpu.tree;
  * p、q 为不同节点且均存在于给定的二叉树中。
  */
 public class Solution236 {
+
   /**
-   *p,q的最近公共祖先a节点有一个特点
-   * 就是p，q分布于a节点的左右子节点中
-   * 非最近公共祖先节点中p，q只是位于一侧，利用这个特性设计算法
+   * 两种情况p是q的父节点（或者q是p的父节点）此时lca就是p，第二种情况pq分别分别位于lca的左右两边
+   * p 和 q 在 root 的子树中，且分列 rootroot 的 异侧（即分别在左、右子树中）；
+   * p = root p=root ，且 q 在 root 的左或右子树中；
+   * q = root q=root ，且 p 在 root 的左或右子树中；
    */
   public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 

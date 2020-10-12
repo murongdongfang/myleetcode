@@ -59,6 +59,7 @@ public class ThreeOrder {
         stack.add(node);
         node = node.left;
       } else{
+        // 只是取得栈顶元素，栈顶元素不出栈
         node = stack.peek();
         //如果存在右子树并且右子树没有被访问就继续入栈
         if(node.right != null && node.right != pre){
@@ -75,7 +76,5 @@ public class ThreeOrder {
         }
       }
     }
-
-
   }
 }
