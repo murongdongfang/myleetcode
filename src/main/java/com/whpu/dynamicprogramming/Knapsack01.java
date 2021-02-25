@@ -30,6 +30,7 @@ public class Knapsack01 {
     for (int i = 0; i < size; i++) {
       for (int j = 0; j < c; j++) {
         memo[i][j] = -1;
+        
       }
     }
     bestValue(w,v,c,size - 1);

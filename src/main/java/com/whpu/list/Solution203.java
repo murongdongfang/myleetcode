@@ -65,12 +65,10 @@ public class Solution203 {
     if(head == null){
       return head;
     }
+    head.next = removeElements2(head.next,val);
     if(head.val == val){
-      head.next = removeElements2(head.next,val);
       return head.next;
-    }else{
-      head.next = removeElements2(head.next,val);
-      return head;
     }
+      return head;
   }
 }
