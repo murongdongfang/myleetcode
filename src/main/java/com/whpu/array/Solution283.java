@@ -27,7 +27,6 @@ public class Solution283 {
         }else{
           k++;
         }
-
       }
     }
   }

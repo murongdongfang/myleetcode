@@ -149,7 +149,7 @@ public class Knapsack01 {
           dp[j] = Integer.max(
             dp[j],
             dp[j - w[i]] + v[i]
-          );
+          );         
         }
     }
     return 0;
