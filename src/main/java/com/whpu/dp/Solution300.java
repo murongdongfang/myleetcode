@@ -1,4 +1,4 @@
-package com.whpu.dynamicprogramming;
+package com.whpu.dp;
 
 import java.util.Arrays;
 

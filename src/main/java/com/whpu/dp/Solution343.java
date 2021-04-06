@@ -1,4 +1,4 @@
-package com.whpu.dynamicprogramming;
+package com.whpu.dp;
 
 /**
  *@author xxh
