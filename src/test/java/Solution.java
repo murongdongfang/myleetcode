@@ -1,4 +1,4 @@
-import com.whpu.list.ListNode;
+import xxh.list.ListNode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
